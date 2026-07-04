@@ -1,8 +1,36 @@
-<DOCTYPE html>
-  <html>
-    <body>
-      <h1>My project</h1>
-      <p>SakuraProject1</p>
-      <a href="SakuraProject1.pdf#"></a>
-    </body>
-  </html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Project PDF Viewer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+        }
+        h1 { margin: 20px; color: #333; }
+        .pdf-container {
+            width: 90%;
+            height: 90vh;
+            border: 2px solid #ccc;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sakura Project 資料</h1>
+
+    <div class="pdf-container">
+        <embed src="SakuraProject1.pdf" type="application/pdf" width="100%" height="100%" />
+    </div>
+
+</body>
+</html>
